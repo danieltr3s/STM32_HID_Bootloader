@@ -79,7 +79,7 @@ Middlewares/ST/STM32_USB_Device_Library/Class/CustomHID/Src/usbd_customhid.c
 
 # ASM sources
 ASM_SOURCES =  \
-startup_stm32f407xx.s
+startup_stm32f411xe.s
 
 
 #######################################
@@ -124,8 +124,9 @@ AS_DEFS =
 
 # C defines
 C_DEFS =  \
+-DUSE_FULL_LL_DRIVER \
 -DUSE_HAL_DRIVER \
--DSTM32F407xx
+-DSTM32F411xE
 
 IS_WEACT_BOARD?=0
 ifeq ($(IS_WEACT_BOARD),1)
@@ -164,7 +165,7 @@ CFLAGS += -MMD -MP -MF"$(@:%.o=%.d)"
 # LDFLAGS
 #######################################
 # link script
-LDSCRIPT = STM32F407VETx_FLASH.ld
+LDSCRIPT = STM32F411CEUx_FLASH.ld
 
 # libraries
 LIBS = -lc -lm -lnosys 
@@ -214,7 +215,7 @@ $(BUILD_DIR):
 #######################################
 clean:
 	$(ECHO) "CLEAN"
-	-$(Q)rm -fR $(BUILD_DIR)
+	-$(Q)del $(BUILD_DIR)
 
 #######################################
 # dependencies

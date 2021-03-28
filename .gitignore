@@ -56,3 +56,4 @@ Temporary Items
 *.lst
 *.map
 *.size
+bootloader/F4/hid_bootloader.bin

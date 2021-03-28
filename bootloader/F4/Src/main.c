@@ -140,7 +140,7 @@ int main(void)
 #ifdef IS_WEACT_BOARD
   #warning "Assuming we're building for WeAct F411"
 #endif
-  if ((magic_val != 0x424C)&&(HAL_GPIO_ReadPin(BOOT_1_PORT, BOOT_1_PIN) != BOOT_1_ENABLED)) {
+  if ((magic_val != 0x424C) && (HAL_GPIO_ReadPin(BOOT_1_PORT, BOOT_1_PIN) != BOOT_1_ENABLED)) {
     HAL_GPIO_WritePin(LED_1_PORT, LED_1_PIN, GPIO_PIN_SET);
     typedef void (*pFunction)(void);
     pFunction Jump_To_Application;
