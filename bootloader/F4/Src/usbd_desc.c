@@ -93,9 +93,9 @@
 
 #define USBD_VID     					4617   //1209 hex
 #define USBD_LANGID_STRING     				1033
-#define USBD_MANUFACTURER_STRING			"www.serasidis.gr"
+#define USBD_MANUFACTURER_STRING			"Daniel Tr3s"
 #define USBD_PID_FS					48826  //BEBA hex
-#define USBD_PRODUCT_STRING_FS				"STM32 HID bootloader"
+#define USBD_PRODUCT_STRING_FS				"Theseus Micromouse HID bootloader"
 #define USBD_SERIALNUMBER_STRING_FS			"1234567890"
 #define USBD_CONFIGURATION_STRING_FS			"STM32 HID bootloader Config"
 #define USBD_INTERFACE_STRING_FS			"STM32 HID bootloader Interface"
